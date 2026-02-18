@@ -11,6 +11,58 @@
         "requestDemo" : "Vous pouvez demander une démo !",
         "projectLanguage" : "Ce projet est en anglais",
         "home" : "Accueil",
+        "journey" : {
+            "title" : "Mon parcours",
+            "description" : "Découvrez mon parcours professionnel, de mes débuts en tant que développeur autodidacte à mon évolution vers un développeur fullstack et designer UI/UX expérimenté, avec une passion pour la création de solutions numériques innovantes et accessibles.",
+            "tiles" : [
+                {
+                    "title" : "Starblast.io",
+                    "description" : "Mon jeu de coeur, Starblast.io, a été le point de départ de ma découverte de NodeJS. A partir de l'API de ce jeu, j'ai pu développer des mods plus ou moins complexes dans l'objectif de créer des expériences de jeu uniques et personnalisées pour les joueurs, tout en approfondissant mes compétences en développement algorithmique avec NodeJS.",
+                    "date" : 2019,
+                    "url" : "https://starblast.io/",
+                    "image" : "/assets/starblast.png",
+                    "timespan" : "Trois ans",
+                    "accessible":  true
+                },
+                {
+                    "title" : "La Suite Sesame",
+                    "description" : "Au travers de mon aventure dans le développement de mods pour Starblast.io, j'ai développé une expertise en NodeJS et en HTML/CSS qui m'a permis de créer La Suite Sesame, un ensemble de deux outils, l'un servant d'affichage de données récoltées sur le jeu, et l'autre étant un dashboard de contrôle pour les dataminers, leur permettant d'ajouter indépendamment des données pour Sesame.",
+                    "date" : 2022,
+                    "url" : "https://archives.naflows.com/content/github.io/sesame/index.html",
+                    "image" : "/assets/sesame.png",
+                    "timespan" : "Un an et demi",
+                    "accessible":  true
+                }, 
+                {
+                    "title" : "Albus & Algus",
+                    "description" : "C'est mon premier projet ancré dans le réel et répondant à un besoin vraiment précis: l'affichage des horaires de bus en temps réel basé sur une étude d'un set de données. Albus, l'application web, et Algus, l'algorithme, ont été développés pour aider les usager à avoir des détails précis sur les horaires de bus. Ce projet a été porté aurpès de l'agence Libéa, qui n'a pas donné suite au projet malgré une démonstration à leurs bureaux.",
+                    "date" : 2024,
+                    "url" : "https://archives.naflows.com/content/albi-bus/index.html",
+                    "image" : "/assets/albus.png",
+                    "timespan" : "Quelques mois",
+                    "accessible":  true
+                },
+                {
+                    "title" : "NASS",
+                    "description" : "Le NASS est mon projet le plus poussé à ce jour, qui vise comme objectif premier à fournir une infrastructure de SSO et de gestion d'accès pour les environnements cloud de Naflows, mon auto-entreprise, avec une attention particulière portée à la sécurité, la flexibilité, et la facilité d'intégration pour ensuite être mise à disposition d'autres projets. Ce projet a été développé dans le cadre de mon activité professionnelle chez Naflows, où j'ai pu développer mes compétences en développement fullstack et en design UI/UX pour créer une solution robuste et innovante.",
+                    "date" : 2025,
+                    "url" : "https://github.com/naflows/naflows-auth",
+                    "image" : "/assets/naflows.png",
+                    "timespan" : "En cours de développement",
+                    "accessible":  true
+                },
+                {
+                    "title" : "Naflows",
+                    "description" : "Naflows est mon auto-entreprise de développement web et de design UI/UX, créée pour offrir des services de qualité à mes clients tout en me permettant de continuer à développer mes compétences et à travailler sur des projets passionnants. Depuis sa création, Naflows a été le cadre de projets personnels et d'une prestation client à ce jour, dont le développement du NASS. Toutefois, cette activité est en cumul de mes études et de mon travail.",
+                    "url" : "https://naflows.com",
+                    "image" : "/assets/naflows.png",
+                    "timespan" : "Depuis 2024",
+                    "date" : 2024,
+                    "accessible":  false
+                }
+            ]
+        },
+
         "cards": {
             "cv": {
                 "title": "Mon CV",
@@ -211,6 +263,58 @@
         "home" : "Home",
         "requestDemo" : "You can request a demo!",
         "projectLanguage" : "This project is in English",
+        "journey" : {
+            "title" : "My journey",
+            "description" : "Discover my professional journey, from my beginnings as a self-taught developer to my evolution into an experienced fullstack developer and UI/UX designer, with a passion for creating innovative and accessible digital solutions.",
+            "tiles" : [
+                {
+                    "title" : "Starblast.io",
+                    "description" : "My beloved game, Starblast.io, was the starting point of my discovery of NodeJS. From the API of this game, I was able to develop more or less complex mods with the goal of creating unique and personalized gaming experiences for players, while deepening my skills in algorithmic development with NodeJS.",
+                    "date" : 2019,
+                    "url" : "https://starblast.io/",
+                    "image" : "/assets/starblast.png",
+                    "timespan" : "Three years",
+                    "accessible":  true
+                },
+                {
+                    "title" : "La Suite Sesame",
+                    "description" : "Through my adventure in developing mods for Starblast.io, I developed expertise in NodeJS and HTML/CSS that allowed me to create La Suite Sesame, a set of two tools, one serving as a data display collected on the game, and the other being a control dashboard for dataminers, allowing them to independently add data for Sesame.",
+                    "date" : 2022,
+                    "url" : "https://archives.naflows.com/content/github.io/sesame/index.html",
+                    "image" : "/assets/sesame.png",
+                    "timespan" : "One year and a half",
+                    "accessible":  true
+                }, 
+                {
+                    "title" : "Albus & Algus",
+                    "description" : "This is my first project anchored in reality and responding to a really specific need: the display of real-time bus schedules based on a study of a dataset. Albus, the web application, and Algus, the algorithm, were developed to help users have precise details on bus schedules. This project was carried out with the agency Libéa, which did not follow up on the project despite a demonstration at their offices.",
+                    "date" : 2024,
+                    "url" : "https://archives.naflows.com/content/albi-bus/index.html",
+                    "image" : "/assets/albus.png",
+                    "timespan" : "A few months",
+                    "accessible":  true
+                },
+                {
+                    "title" : "NASS",
+                    "description" : "NASS is my most advanced project to date, which aims as its primary objective to provide an infrastructure for SSO and access management for the cloud environments of Naflows, my auto-enterprise, with a particular focus on security, flexibility, and ease of integration to then be made available to other projects. This project was developed as part of my professional activity at Naflows, where I was able to develop my skills in fullstack development and UI/UX design to create a robust and innovative solution.",
+                    "date" : 2025,
+                    "url" : "https://github.com/Naflows/naflows-auth",
+                    "image": "/assets/naflows-blue.png",
+                    "timespan" : "Six months",
+                    "accessible":  true
+                },
+                {
+                    "title" : "Naflows",
+                    "description" : "Naflows is my auto-enterprise of web development and UI/UX design, created to offer quality services to my clients while allowing me to continue developing my skills and working on exciting projects. Since its creation, Naflows has been the framework for personal projects and one client service to date, including the development of NASS. However, this activity is in addition to my studies and work.",
+                    "url" : "https://naflows.com",
+                    "image": "/assets/naflows-blue.png",
+                    "timespan" : "Since 2024",
+                    "date" : 2024,
+                    "accessible":  false
+                }
+            ]
+        },
+
         "cards": {
             "cv": {
                 "title": "My CV",
