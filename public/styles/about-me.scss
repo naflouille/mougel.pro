@@ -1,95 +1,206 @@
 @import './variables.scss';
 
+
 .about__me__page {
-        display: flex;
-    flex-direction: column;
+    display: flex;
+    flex-direction: row-reverse;
     gap: 50px;
     height: fit-content;
     width: 100%;
+    margin-bottom: auto;
     padding-bottom: 50px;
-    .content {
-        display:flex;
-        gap: 40px;
-    }
 }
 
 
-
-.values__list {
+.sheet {
+    padding: 20px;
+    background-color: $global-hue-2-100;
+    border-radius: 20px;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    // Grid of three columns
-    column-gap: 10px;
-    row-gap: 10px;
-    width: 100%;
-    .value {
+    flex-direction: column;
+    align-self: stretch;
+    gap: 20px;
+    &.person {
+        width: 50%;
+    }
+    .sheet__header {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+    .tag {
+        font-size: 20px;
+        color: $global-hue-1-100;
+        font-weight: bold;
+        svg {
+            min-width: 25px;
+            min-height: 25px;
+            max-width: 25px;
+            max-height: 25px;
+            fill: $global-hue-2-100;
+        }
+        border-radius: 20px;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 30px;
+        background-color: $global-hue-1-100;
+        color: $global-hue-2-100;
+        width:calc(100% - 60px);
+        align-self: stretch;
+
+        p {
+            margin: 0;
+        }
+
+        &.professional__tag {
+            width: calc(30% - 60px);
+        }
+    }
+    .sheet__content {
+        padding: 10px 0;
         display: flex;
         flex-direction: column;
         gap: 10px;
-        padding: 20px;
-        background-color: $global-hue-2-100;
-        border-radius: 50px;
-
-
-        .value__name {
+        p {
+            margin: 0;
             font-size: 18px;
-            font-weight: bold;
             color: $global-hue-1-100;
-            margin:0;
         }
+        h3 {
+            margin: 0;
+            font-size: 24px;
+            color: $global-hue-1-100;
+            font-weight: bolder;
+        }
+    }
+    .sheet__image {
+        border-radius: 20px;
+        object-fit: cover;
+        display: flex;
+        align-items: center;
+        background-color: $global-hue-1-100;
+        border-radius: 50%;
+        padding: 5px;
+        justify-content: center;
 
+        &.professional__sheet__image {
+            width: 100%;
+            border-radius: 50px;
+        }
+        
+
+        .person__sheet__image--img {
+            border-radius: 50%;
+            object-fit: cover;
+            width: 150px;
+            height: 150px;
+        }
+        .professional__sheet__image--img {
+            border-radius: 20px;
+            object-fit: cover;
+
+        }
+        
     }
 }
 
-.ambitions {
-    width: 70%;
-}
-.values {
-    width: 100%;
-}
 
-.ambitions__list {
+.naflows__ambition, .values {
     display: flex;
     flex-direction: column;
-    // Grid of three columns
-    gap: 10px;
-    width: 100%;
-    .ambition {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        padding: 20px;
-        background-color: $global-hue-2-100;
-        border-radius: 10px;
-        width: calc(100% - 40px);
-        .ambition__header{
-            display: flex;
-            flex-direction: row;
-            gap: 20px;
-            align-items: center;
-        }
+    gap: 20px;
+    h3 {
+        margin: 0;
+        color: $global-hue-1-100;
+        font-size: 24px;
+        font-weight: bolder;
+    }
 
-        .ambition__icon {
-            svg {
-                width: 40px;
-                height: 40px;
-                fill: $global-hue-1-100;
+    .naflows__ambition__list, .values__list {
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        flex-wrap: wrap;
+
+        .values__item {
+            display: flex;
+            flex-direction: row;align-items: center;
+            gap: 10px;
+            width: fit-content;
+            border-radius: 5px;
+            padding: 5px 15px;
+            background-color: $global-hue-1-100;
+            color : $global-hue-2-100;
+
+            p {
+                margin: 0;
+                font-size: 15px;
             }
         }
 
-        .ambition__name {
-            font-size: 18px;
-            font-weight: bold;
-            color: $global-hue-1-100;
-            margin:0;
-        }
+        .naflows__ambition__item {
+            display: flex;
+            flex-direction: row;align-items: center;
+            gap: 10px;
+            width: fit-content;
+            border-radius: 50px;
+            padding: 5px 15px 5px 5px ;
+            background-color: $global-hue-1-100;
+            color : $global-hue-2-100;
 
-        .ambition__description {
-            font-size: 14px;
-            color: $global-hue-1-100;
-            margin:0;
+            p {
+                margin: 0;
+            }
+           .icon {
+                padding: 10px;
+                border-radius: 50px;
+                background-color: $global-hue-2-100;
+                height: fit-content;
+                width: fit-content;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                svg {
+                    min-width: 25px;
+                    min-height: 25px;
+                    max-width: 25px;
+                    max-height: 25px;
+                    fill: $global-hue-1-100;
+                }
+           }
+        }
+    }
+}
+
+
+@media (max-width: 700px) {
+    .about__me__page {
+        flex-direction: column;
+        align-items: center;
+        .sheet {
+            width: calc(100% - 40px);
+            .sheet__header {
+                flex-direction: column-reverse;
+                align-items: center;
+                .tag {
+                    width: calc(100% - 60px);
+                }
+            }
+            .professional__sheet__image {
+                height: auto;
+                max-width: 100%;
+                border-radius: 40px;
+                img {
+                    width: 90%;
+                    height: auto;
+                    border-radius: 40px;
+                }
+            }
         }
     }
 }

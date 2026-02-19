@@ -65,12 +65,24 @@ interface InsideTranslate{
     },
     "about-me" : {
       "title": string;
+      "valuesTitle": string;
       "ambitionsContent" : {
         "title": string;
       },
       "valuesContent" : {
         "title": string;
       },
+      "person" : {
+        "title": string;
+        "descriptionTitle": string;
+        "description": string;
+      },
+      "professional" : {
+        "title": string;
+        "descriptionTitle": string;
+        "description": string;
+      },
+      "ambitionsTitle": string;
       "ambitions" : {
         name: string;
         description: string;

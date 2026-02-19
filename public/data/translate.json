@@ -21,7 +21,7 @@
                     "title" : "Starblast.io",
                     "description" : "Mon jeu de coeur, Starblast.io, a été le point de départ de ma découverte de NodeJS. A partir de l'API de ce jeu, j'ai pu développer des mods plus ou moins complexes dans l'objectif de créer des expériences de jeu uniques et personnalisées pour les joueurs, tout en approfondissant mes compétences en développement algorithmique avec NodeJS.",
                     "date" : 2019,
-                    "url" : "https://starblast.io/",
+                    "url" : "https://archives.naflows.com/content/github.io/arena/index.html",
                     "image" : "/assets/starblast.png",
                     "timespan" : "Trois ans",
                     "accessible":  true
@@ -279,7 +279,7 @@
                     "title" : "Starblast.io",
                     "description" : "My beloved game, Starblast.io, was the starting point of my discovery of NodeJS. From the API of this game, I was able to develop more or less complex mods with the goal of creating unique and personalized gaming experiences for players, while deepening my skills in algorithmic development with NodeJS.",
                     "date" : 2019,
-                    "url" : "https://starblast.io/",
+                    "url" : "https://archives.naflows.com/content/github.io/arena/index.html",
                     "image" : "/assets/starblast.png",
                     "timespan" : "Three years",
                     "accessible":  true
@@ -457,33 +457,48 @@
             "valuesContent" : {
                 "title" : "Working with me means"
             },
+
+            "person" : {
+                "title" : "As a person",
+                "description" : "I am collaborative, transparent, and punctual. I value open communication and strive to build strong relationships with my clients and collaborators based on trust and mutual respect.",
+                "descriptionTitle" : "My values as a person"
+            },
+            "professional" : {
+                "title" : "As a professional",
+                "description" : " I am committed to delivering high-quality work that meets the needs of my clients and users. I am passionate about continuous learning and improvement, and I am always looking for ways to innovate and push the boundaries of what is possible in web development and UI/UX design.",
+                "descriptionTitle" : "My values as a professional"
+            },
+
+            "ambitionsTitle" : "Ambitions that drive my work",
+            "valuesTitle" : "Values that guide my work",
             "ambitions" : [
                 {
                     "name" : "Create accessible digital solutions",
-                    "description" : "I strive to design and develop digital solutions that meet the needs of my clients and users, with a focus on innovation, user-friendliness, and accessibility for all.",
                     "icon" : "innovation"
                 },
                 {
-                    "name" : "Support my collaborators in their digital transformation",
-                    "description" : "I am committed to supporting my clients and collaborators in their digital transformation, sharing my knowledge and expertise to help them understand and adopt digital technologies effectively and strategically.",
+                    "name" : "Support throughout digital transformation",
                     "icon" : "support"
                 },
                 {
-                    "name" : "Constantly improve my skills and knowledge",
-                    "description" : "I am passionate about continuous learning and strive to constantly improve my skills and knowledge in web development, UI/UX design, and digital technologies in general, in order to stay at the forefront of innovation and provide high-quality solutions to my clients.",
+                    "name" : "Constantly improve skills and knowledge",
                     "icon" : "improvement"
+                },
+                {
+                    "name" : "Provide clear and transparent communication",
+                    "icon" : "communication"
+                },
+                {
+                    "name" : "Consolidate sovereignty of customers",
+                    "icon" : "sovereignty"
                 }
             ],
             "values" : [
                 {
-                    "name": "Collaboration"               },
-                {
-                    "name": "Pedagogy"                },
-                {
-                    "name": "Digital sovereignty"
+                    "name": "Pedagogy"
                 },
                 {
-                    "name": "Perfection & Excellence"
+                    "name": "Excellence"
                 },
                 {
                     "name": "Transparency"
@@ -492,7 +507,16 @@
                     "name": "Punctuality"
                 },
                 {
-                    "name": "Imagination"
+                    "name": "Creativity"
+                },
+                {
+                    "name": "Collaboration"
+                },
+                {
+                    "name" : "Kindness"
+                },
+                {
+                    "name" : "Simplicity"
                 }
             ]
         },
