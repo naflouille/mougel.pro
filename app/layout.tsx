@@ -13,7 +13,7 @@ interface CardInterface {
   url?: string;
   image?: string;
 }
-interface InsideTranslate{ 
+export interface InsideTranslate{ 
      "welcome-description": string;
     "welcome-title": string;
     "switch-lang": string;
@@ -130,7 +130,12 @@ export default function RootLayout({
   const [lang, setLang] = React.useState("EN");
   const [translate, setTranslate] = React.useState<InsideTranslate>(Translation["EN"]);
 
-  const [currentPage, setCurrentPage] = React.useState(path.basename(window.location.pathname) || "home");
+  const [currentPage, setCurrentPage] = React.useState<string>(() => {
+    if (typeof window !== "undefined") {
+      return path.basename(window.location.pathname) || "home";
+    }
+    return "home";
+  });
 
 
   useEffect(() => {

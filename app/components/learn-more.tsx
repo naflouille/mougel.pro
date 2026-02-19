@@ -1,15 +1,19 @@
+import { InsideTranslate } from "../layout";
 
 
 export default function LearnMore({
     translate
 } : {
-    translate: any
+    translate: InsideTranslate
 }) {
     return (
         <div className="about__content">
             <h2>{translate ? translate["learn-more"]["title"] : "Loading..."}</h2>
             <div className="about__content__links">
-                {translate["learn-more"]["links"].map((link) => (
+                {translate["learn-more"]["links"].map((link : {
+                    name: string;
+                    url: string;
+                }) => (
                     <a
                         key={link.name}
                         href={link.url}

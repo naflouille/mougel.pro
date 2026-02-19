@@ -128,7 +128,11 @@ export default function Home() {
                 />
               </div>
               <div className="footer__socials">
-                {Links.map((link) => (
+                {Links.map((link : {
+                  name: string;
+                  url: string;
+                  icon: string;
+                }) => (
                   <a
                     key={link.name}
                     href={link.url}
