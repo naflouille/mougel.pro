@@ -9,7 +9,7 @@ interface JourneyTile {
     date: number;
     url : string;
     timespan: string;
-    accessible: boolean;
+    accessible?: boolean;
     image: string;
 }
 
@@ -20,12 +20,13 @@ export default function Journey() {
     const [lineHeight, setLineHeight] = useState(0);
 
     useEffect(() => {
-        if (ref.current) {
-            setTimeout(() => {
+        setTimeout(() => {
+            if (ref.current) {
                 const height = ref.current.offsetHeight;
                 setLineHeight(height);
-            }, 300);
-        }
+            }
+        }, 300);
+    
     }, [translate]);
 
     return (
@@ -41,26 +42,33 @@ export default function Journey() {
                             <div className="journey__tile__image">
                                 <img src={item.image} alt={item.title} className="journey__tile__image--img" />
                             </div>
+                            
                             <div className="journey__tile__content">
-                                <div className="tile__header">
-                                    <div className="tile__span">
-                                        <p className="journey__tile__content__date">
-                                            {item.date}
-                                        </p>
-                                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M200-440q-17 0-28.5-11.5T160-480q0-17 11.5-28.5T200-520h560q17 0 28.5 11.5T800-480q0 17-11.5 28.5T760-440H200Z"/></svg>
-                                        <p className="journey__tile__content__date">{item.timespan}</p>
+                                <div className="tile__body">
+                                    <div className="tile__header">
+                                        <div className="tile__span">
+                                            <p className="journey__tile__content__date">
+                                                {item.date}
+                                            </p>
+                                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M200-440q-17 0-28.5-11.5T160-480q0-17 11.5-28.5T200-520h560q17 0 28.5 11.5T800-480q0 17-11.5 28.5T760-440H200Z"/></svg>
+                                            <p className="journey__tile__content__date">{item.timespan}</p>
+                                        </div>
+                                        <h3 className="journey__tile__content__title">{item.title}</h3>
+
                                     </div>
-                                    <h3 className="journey__tile__content__title">{item.title}</h3>
-
+                                    <p className="journey__tile__content__description">{item.description}</p>
                                 </div>
-                                <p className="journey__tile__content__description">{item.description}</p>
-
-                                {item.accessible ? (
-                                    <a href={item.url} className="journey__tile__content__link">Voir le projet</a>
-                                ) : (
-                                    <p className="journey__tile__content__link disabled">Projet en cours de développement</p>
-                                )}
                             </div>
+
+                                {item.accessible != null ? (
+                                    item.accessible ? (
+                                        <a href={item.url} className="journey__tile__content__link">
+                                            {translate.journey.projectView}
+                                        </a>
+                                    ) : (
+                                        <p className="journey__tile__content__link disabled">{translate.journey.projectInDev}</p>
+                                    )
+                                ) : null}
                         </div>
                     ))
                 }
@@ -68,3 +76,5 @@ export default function Journey() {
         </div>
     )
 }
+
+

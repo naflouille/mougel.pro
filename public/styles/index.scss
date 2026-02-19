@@ -71,6 +71,7 @@ body {
             flex-direction: row;
             align-items: center;
             gap: 20px;
+            
 
             .footer__visual__image {
                 border-radius: 50%;
@@ -387,6 +388,7 @@ body {
                 background-color: $global-hue-2-100;
                 color: $global-hue-1-100;
                 border-radius: 10px;
+                border-color: $global-hue-1-100;
             }
         }
     }
@@ -425,7 +427,7 @@ body {
 // RESPONSIVE
 @media (max-width: 768px) {
     body {
-        padding: 20px;
+        padding: 100px 20px;
         height: auto;
         width: auto;
         overflow-y: auto;
@@ -453,6 +455,10 @@ body {
             padding-top: 0px;
             gap: 50px;
             padding-bottom: 20px;
+            .about__content {
+                width: 100%;
+                align-items:start;
+            }
         }
 
         .footer__content {
@@ -461,6 +467,10 @@ body {
             gap: 30px;
 
         }
+    }
+
+    .footer__visual {
+        width: 100%;
     }
 
     .footer__header {
@@ -477,6 +487,11 @@ body {
             flex-direction: column;
             gap: 20px;
             align-self: stretch;
+            .card {
+                max-width: unset !important;
+                width: calc(100% - 40px) !important;
+
+            }
         }
     }
 
@@ -497,6 +512,38 @@ body {
 
         .card__image {
             width: 100%;
+        }
+    }
+
+    .language-switcher {
+        position: fixed;
+        z-index: 50;
+        bottom: 20px;
+        right: 20px;
+
+    }
+
+    .app__footer__link {
+        justify-content: center;
+        position:fixed;
+        z-index: 50;
+        bottom: 20px;
+        left: 20px;
+        span {
+            display: none;
+        }
+    }
+
+    .app__footer {
+        .open__to__work {
+            position:fixed;
+            width: calc(100% - 40px);
+            z-index: 50;
+            left:0;
+            right:0;
+            margin: auto;
+            border: 2px solid $global-hue-1-100;
+            top: 20px;
         }
     }
 }

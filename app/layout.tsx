@@ -28,6 +28,8 @@ interface InsideTranslate{
     "journey": {
       "title": string;
       "description": string;
+      "projectInDev": string;
+      "projectView": string;
       "tiles": {
         title: string;
         description: string;

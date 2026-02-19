@@ -14,6 +14,8 @@
         "journey" : {
             "title" : "Mon parcours",
             "description" : "Découvrez mon parcours professionnel, de mes débuts en tant que développeur autodidacte à mon évolution vers un développeur fullstack et designer UI/UX expérimenté, avec une passion pour la création de solutions numériques innovantes et accessibles.",
+            "projectInDev" : "Projet en développement",
+            "projectView": "Voir le projet",
             "tiles" : [
                 {
                     "title" : "Starblast.io",
@@ -59,6 +61,14 @@
                     "timespan" : "Depuis 2024",
                     "date" : 2024,
                     "accessible":  false
+                },
+                {
+                    "title" : "Études en informatique",
+                    "description" : "Toutes les étapes que cette page présente sont à mettre en perspective avec mes études en informatique, qui ont débuté en 2023 et se poursuivent actuellement. Ces études m'ont permis d'acquérir des connaissances théoriques solides et de développer mes compétences pratiques dans divers domaines de l'informatique, notamment le développement web, le design UI/UX, et la gestion de projets numériques. Elles constituent un socle important pour ma carrière professionnelle et sont étroitement liées à l'évolution de mes projets personnels et professionnels présentés sur cette page. En cumul de mes études, de mon activité pour Naflows, et mes projets personnels, j'ai travaillé une année complète de 2025 à 2026 en 14 heures par semaine pour Jysk, en tant que vendeur, ce qui m'a permis de développer des compétences en communication, en gestion du temps, et en travail d'équipe.",
+                    "date" : 2023,
+                    "timespan": "3 années",
+                    "url" : "https://univ-jfc.fr/",
+                    "image" : "/assets/university.png"
                 }
             ]
         },
@@ -238,11 +248,7 @@
                 },
                 {
                     "name": "Mon parcours",
-                    "url": "/skills"
-                },
-                {
-                    "name": "Devblog",
-                    "url": "/projects"
+                    "url": "/journey"
                 },
                 {
                     "name": "Ko-Fi",
@@ -266,6 +272,8 @@
         "journey" : {
             "title" : "My journey",
             "description" : "Discover my professional journey, from my beginnings as a self-taught developer to my evolution into an experienced fullstack developer and UI/UX designer, with a passion for creating innovative and accessible digital solutions.",
+            "projectInDev" : "Project in development",
+            "projectView": "View project",
             "tiles" : [
                 {
                     "title" : "Starblast.io",
@@ -311,6 +319,14 @@
                     "timespan" : "Since 2024",
                     "date" : 2024,
                     "accessible":  false
+                },
+                {
+                    "title" : "Computer Science Studies",
+                    "description" : "All the steps that this page presents are to be put into perspective with my computer science studies, which began in 2023 and are currently ongoing. These studies have allowed me to acquire solid theoretical knowledge and develop my practical skills in various areas of computer science, including web development, UI/UX design, and digital project management. They constitute an important foundation for my professional career and are closely linked to the evolution of my personal and professional projects presented on this page. In addition to my studies, my activity for Naflows, and my personal projects, I worked a full year from 2025 to 2026 for Jysk, as a salesperson, which allowed me to develop skills in communication, time management, and teamwork.",
+                    "date" : 2023,
+                    "timespan": "3 years",
+                    "url" : "https://univ-jfc.fr/",
+                    "image" : "/assets/university.png"
                 }
             ]
         },
@@ -489,11 +505,7 @@
                 },
                 {
                     "name": "My journey",
-                    "url": "/skills"
-                },
-                {
-                    "name": "Devblog",
-                    "url": "/projects"
+                    "url": "/journey"
                 },
                 {
                     "name": "Ko-Fi",
