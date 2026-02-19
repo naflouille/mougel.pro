@@ -17,7 +17,7 @@ function Card({
   content: string;
   action: {
     type: "link" | "download";
-    url: string;
+    url: string | undefined;
     name: string;
   },
   img?: string;
