@@ -194,39 +194,55 @@
         },
         "about-me" : {
             "title" : "Mes ambitions et valeurs",
-            "ambitionsContent": {
+
+            "ambitionsContent" : {
                 "title" : "Trois ambitions principales"
             },
-            "valuesContent": {
-                "title" : "Travailler avec moi signifie"
+            "valuesContent" : {
+                "title" : "Travailler avec moi, c'est"
             },
+
+            "person" : {
+                "title" : "En tant que personne",
+                "description" : "Je suis collaboratif, transparent, et ponctuel. Je valorise la communication ouverte et je m'efforce de construire des relations solides avec mes clients et collaborateurs basées sur la confiance et le respect mutuel.",
+                "descriptionTitle" : "Mes valeurs en tant que personne"
+            },
+            "professional" : {
+                "title" : "En tant que professionnel",
+                "description" : "Je m'engage à fournir un travail de haute qualité qui répond aux besoins de mes clients et utilisateurs. Je suis passionné par l'apprentissage continu et l'amélioration, et je suis toujours à la recherche de moyens d'innover et de repousser les limites de ce qui est possible en développement web et design UI/UX.",
+                "descriptionTitle" : "Mes valeurs en tant que professionnel"
+            },
+
+            "ambitionsTitle" : "Des ambitions qui motivent mon travail",
+            "valuesTitle" : "Des valeurs qui guident mon travail",
             "ambitions" : [
                 {
-                    "name" : "Créer des solutions numériques innovantes et accessibles",
-                    "description" : "Je m'efforce de concevoir et de développer des solutions numériques qui répondent aux besoins de mes clients et utilisateurs, en mettant l'accent sur l'innovation, la convivialité, et l'accessibilité pour tous.",
+                    "name" : "Créer des solutions numériques accessibles",
                     "icon" : "innovation"
                 },
                 {
-                    "name" : "Accompagner mes clients et collaborateurs dans leur transformation numérique",
-                    "description" : "Je m'engage à accompagner mes clients et collaborateurs dans leur transformation numérique, en partageant mes connaissances et mon expertise pour les aider à comprendre et à adopter les technologies numériques de manière efficace et stratégique.",
+                    "name" : "Accompagner tout au long de la transformation numérique",
                     "icon" : "support"
                 },
                 {
-                    "name" : "Améliorer constamment mes compétences et connaissances",
-                    "description" : "Je suis passionné par l'apprentissage continu et je m'efforce d'améliorer constamment mes compétences et connaissances dans les domaines du développement web, du design UI/UX, et des technologies numériques en général, afin de rester à la pointe de l'innovation et de fournir des solutions de haute qualité à mes clients.",
+                    "name" : "Améliorer constamment les compétences et connaissances",
                     "icon" : "improvement"
-                }
-            ],
-            "values": [
-                {
-                    "name": "Collaboration"               },
-                {
-                    "name": "Pédagogie"                },
-                {
-                    "name": "Souveraineté numérique"
                 },
                 {
-                    "name": "Perfection & Excellence"
+                    "name" : "Fournir une communication claire et transparente",
+                    "icon" : "communication"
+                },
+                {
+                    "name" : "Consolider la souveraineté des clients",
+                    "icon" : "sovereignty"
+                }
+            ],
+            "values" : [
+                {
+                    "name": "Pédagogie"
+                },
+                {
+                    "name": "Excellence"
                 },
                 {
                     "name": "Transparence"
@@ -235,9 +251,20 @@
                     "name": "Ponctualité"
                 },
                 {
-                    "name": "Imagination"
+                    "name": "Créativité"
+                },
+                {
+                    "name": "Collaboration"
+                },
+                {
+                    "name" : "Bienveillance"
+                },
+                {
+                    "name" : "Simplicité"
                 }
-             ]
+            ]
+            
+
         },
         "learn-more": {
             "title": "En savoir plus",

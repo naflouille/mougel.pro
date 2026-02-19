@@ -133,6 +133,22 @@ export default function RootLayout({
   const [currentPage, setCurrentPage] = React.useState(path.basename(window.location.pathname) || "home");
 
 
+  useEffect(() => {
+    const storedLang = localStorage.getItem("lang");
+    if (storedLang && (storedLang === "EN" || storedLang === "FR")) {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
+      setLang(storedLang);
+      setTranslate(Translation[storedLang]);
+    }
+  }, []);
+
+  useEffect(() => {
+    if (lang) {
+      localStorage.setItem("lang", lang);
+    }
+  }, [lang]);
+
+
 
 
   return (
@@ -160,10 +176,10 @@ export default function RootLayout({
             </div>
           </div>
           <div className="language-switcher">
-            {[
+            {([
               { n: "EN", l: "English" },
               { n: "FR", l: "Français" }
-            ].map((language) => (
+            ] as { n: "EN" | "FR"; l: string }[]).map((language : { n: "EN" | "FR"; l: string }) => (
               <button
                 key={language.n}
                 onClick={() => {
