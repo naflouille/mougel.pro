@@ -6,15 +6,16 @@ body {
     color: $global-hue-2-100;
     font-family: 'IBM Plex Mono', monospace;
     padding: 20px 50px 50px 50px;
-    height: calc(100vh - 100px);
     width: calc(100vw - 100px);
     gap: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
     gap: 20px;
+    min-height: calc(100vh - 100px);
 }
 
 @keyframes TextSlideThroughScreen {
@@ -28,7 +29,9 @@ body {
     }
 }
 
-
+.footer {
+    height: fit-content;
+}
 .footer__header {
     display: flex;
     flex-direction: row;
@@ -179,7 +182,8 @@ body {
     flex-direction: row;
     align-items: center;
     gap: 50px;
-
+    min-height: 100%;
+    margin: auto;
     .small--cards {
         display: flex;
         flex-direction: row;
@@ -205,6 +209,7 @@ body {
 
 
     &.card--with-image {
+        width: 100%;
         .card__content {
             flex-direction: column
         }
@@ -321,7 +326,9 @@ body {
     display: flex;
     flex-direction: column;
     gap: 50px;
-    height: 100%;
+    height: fit-content;
+    justify-content: space-between;
+    min-height: calc(100vh - 100px);
     width: 100%;
 }
 
@@ -483,6 +490,11 @@ body {
         flex-direction: column;
         gap: 30px;
 
+
+        .card {
+            width: calc(100% - 40px);
+
+        }
         .small--cards {
             flex-direction: column;
             gap: 20px;
@@ -544,6 +556,35 @@ body {
             margin: auto;
             border: 2px solid $global-hue-1-100;
             top: 20px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 1250px) {
+    .small--cards {
+        width: 100%;
+        .card {
+            width: calc(100% - 40px) !important;
+            max-width: unset !important;
+        }
+    }
+    .header__content {
+        flex-wrap: wrap !important;
+        gap: 20px !important;
+        .card__header {
+            .card__header {
+            align-items: start !important;
+
+            }
+        }
+        .card__content{
+            flex-direction: row !important;
+            
+            img {
+                height: 50px !important;
+                width: auto !important;
+            }
         }
     }
 }

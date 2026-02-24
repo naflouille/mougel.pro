@@ -17,7 +17,6 @@ export default function LearnMore({
                     <a
                         key={link.name}
                         href={link.url}
-                        target="_blank"
                         rel="noopener noreferrer"
                         className="about__content__link"
                     >

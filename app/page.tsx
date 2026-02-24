@@ -2,7 +2,7 @@
 import { useTranslate } from "./layout";
 import Links from "@/public/data/links.json";
 import Image from "next/image";
-import MOUGELDavid from "@/public/assets/md.jpg";
+import MOUGELDavid from "@/public/assets/md.png";
 import LearnMore from "./components/learn-more";
 import { JSX } from "react/jsx-dev-runtime";
 
@@ -43,7 +43,6 @@ function Card({
           {action.type === "link" ? (
             <a
               href={action.url}
-              target="_blank"
               rel="noopener noreferrer"
               className="card__action__link"
             >
@@ -119,13 +118,7 @@ export default function Home() {
           <div className="footer__content">
             <div className="footer__visual">
               <div className="footer__visual__image">
-                <Image
-                  src={MOUGELDavid}
-                  alt="David Mougel"
-                  width={100}
-                  height={100}
-                  className="footer__visual__image--img"
-                />
+                <img src="/assets/md.png" alt="David Mougel" className="footer__visual__image--img" />
               </div>
               <div className="footer__socials">
                 {Links.map((link : {
@@ -136,7 +129,6 @@ export default function Home() {
                   <a
                     key={link.name}
                     href={link.url}
-                    target="_blank"
                     rel="noopener noreferrer"
                     className="footer__social-link"
                     dangerouslySetInnerHTML={{

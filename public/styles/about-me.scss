@@ -8,7 +8,8 @@
     height: fit-content;
     width: 100%;
     margin-bottom: auto;
-    padding-bottom: 50px;
+    margin-top:auto;
+    
 }
 
 
@@ -201,6 +202,15 @@
                     border-radius: 40px;
                 }
             }
+        }
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .about__me__page {
+        flex-direction: column;
+        .sheet {
+            width: calc(100% - 40px);
         }
     }
 }
