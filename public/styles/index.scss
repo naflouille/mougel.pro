@@ -436,10 +436,9 @@ body {
     body {
         padding: 100px 20px;
         height: auto;
-        width: auto;
+        width: calc(100vw - 40px);
         overflow-y: auto;
         flex-direction: column-reverse;
-
         .language-switcher {
             justify-content: center;
         }
@@ -456,7 +455,6 @@ body {
 
     .main {
         flex-direction: column-reverse;
-
         .footer__header {
             border-style: none none solid none;
             padding-top: 0px;
@@ -486,15 +484,16 @@ body {
         gap: 20px;
     }
 
+    .card {
+        width: calc(100%) !important;
+    }
+
+
     .header__content {
         flex-direction: column;
         gap: 30px;
+        width: calc(100%);
 
-
-        .card {
-            width: calc(100% - 40px);
-
-        }
         .small--cards {
             flex-direction: column;
             gap: 20px;
@@ -508,6 +507,8 @@ body {
     }
 
     .card__content {
+        display: flex;
+        flex-direction: column !important;
         .card__action {
             a {
                 gap: 10px;
@@ -516,10 +517,13 @@ body {
     }
 
     .card--with-image {
-        width: calc(100% - 10px);
 
+        width: calc(100% - 40px) !important;
         .card__content {
-            flex-direction: column;
+
+            display: flex;
+            flex-direction: column !important;
+            flex-wrap: wrap;
         }
 
         .card__image {
